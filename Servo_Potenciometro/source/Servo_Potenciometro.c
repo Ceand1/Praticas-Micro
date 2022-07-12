@@ -111,7 +111,7 @@ void adcInitModule(void){
 	ADC0->CFG1 |= (0b11 << 5); // (input clock)/8
 
 	// Sample time configuration
-	ADC0->CFG1 |= (1 << 10); // Long sample time
+	ADC0->CFG1 |= (1 << 4); // Long sample time
 
 	/* ADC0 SC3
 	 *
