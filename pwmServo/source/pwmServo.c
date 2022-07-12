@@ -160,9 +160,9 @@ void steps(){
 void setupPWM(){
 
 	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 5);
-	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 5);
-	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 5);
-	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 5);
+	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 4);
+	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 3);
+	TPM1_REG->CONTROLS[0].CnSC &= ~(1 << 2);
 
 	TPM1_REG->CONTROLS[0].CnSC |= (0 << 5) | (1 << 3);
 
