@@ -173,20 +173,7 @@ void setupPWM(){
 int main(void) {
 	//SystemCoreClockUpdate();
 	InitTPMPWM();
-	setupPWM();
-	TPM1_REG->CONTROLS[0].CnV = noventa;
-
-	delay();
-
-	setupPWM();
-	TPM1_REG->CONTROLS[0].CnV = zero;
-
-	delay();
-
-	setupPWM();
-	TPM1_REG->CONTROLS[0].CnV = cenoi;
-
-	delay();
+	
 
 
 	while(1){
