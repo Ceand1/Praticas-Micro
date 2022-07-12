@@ -88,8 +88,6 @@ void InitTPMPWM(void){
 
 
 void adcInitModule(void){
-	// Enable the clock to I/O pin used by the ADC channel (PORTB)
-	SIM->SCGC5 |= (1 << 10);
 
 	// Set the PORTX_PCRn MUX bit for ADC
 	PORTB->PCR[1] |= (0b000 << 8);
